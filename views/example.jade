@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1  Get Form
+  form(action='users/process_get' method='GET')  
+    |First Name: 
+    input(type='text' name='first_name')  
+    br  
+    |Last Name: 
+    input(type='text' name='last_name')  
+    br
+    input(type='submit' value='Submit')
+  br
+  h1  Post Form
+  form(action='users/process_post' method='POST')  
+    |First Name: 
+    input(type='text' name='first_name')  
+    br  
+    |Last Name: 
+    input(type='text' name='last_name') 
+    br 
+    input(type='submit' value='Submit')
+
