@@ -7,6 +7,7 @@ var fs = require('fs')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var opn = require('opn');
+const { post } = require('./routes/index');
 var app = express();
 // app.set('views', __dirname + '/views');
 // app.engine('html', require('ejs').renderFile);
@@ -14,15 +15,21 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static(path.join(__dirname, '')));
 app.get('/',function(req,res){
+  res.send("hello welcome to the hoem page of my web site")
   console.log('server starte at http:\\127.0.0.1:9000')
   // res.send('hello world')
-  res.sendFile(path.join(__dirname,'login.html'));
+  // res.sendFile(path.join(__dirname,'login.html'));
 })
 // app.post('/home',function(req,res){
 //   // res.sendFile(path.join(__dirname,'index.html'));
 //   console.log(req.body.passWrd)
   
 // })
+app.post('/post',function(req,res){
+  console.log("this is to show that post is working fine")
+  res.send("this is to just show that the error was due to the html filr not loading")
+  // res.sendFile(path.join(__dirname,'styledheets/login.html'));
+})
 app.get('/home',function(req,res) {
   res.sendFile(path.join(__dirname,'index.html'));
   console.log(__dirname)
@@ -30,6 +37,7 @@ app.get('/home',function(req,res) {
   var tmpPasWRd = req.query.passWrd
   if (tmpUserid == 'vishnu'){
     console.log("boss has arrived")
+    // post("https://aumsam.amrita.edu/aums/Jsp/Core_Common/index.jsp?task=off")
   }
   // console.log(req.body.fname)
   // console.log(req.body.lastName)

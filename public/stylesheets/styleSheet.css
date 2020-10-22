@@ -10,11 +10,17 @@ h1 {
   float: center;
   font-size: 28px;
     font-weight: 200;
-    line-height: 1em;
+    /* line-height: 1em; */
   color: #F8951B;
   margin-left: 100px;
-  margin-top: -90px;
+  margin-top: -60px;
 
+}
+input::placeholder{
+  opacity: .5;
+  font-size: 15px;
+  text-align: left; 
+  /* text-align: left; */
 }
 #row {
   content: "\a";
@@ -46,7 +52,7 @@ h1 {
   margin-right: auto; */
   width: 340px;
   /* margin: 4px auto 10px auto; */
-  padding:30px;
+  padding:20px 26px;
   padding-top: 100px;
   position: relative;
   left: 560px;
@@ -78,8 +84,8 @@ h1 {
   border: 0px; */
   text-indent: -999em;
   float: right;
-  height: 100px;
-  width: 850px;
+  height: 109px;
+  width: 855px;
   /* align-items: center; */
   border: 0px;
   /* float: right;
@@ -113,11 +119,11 @@ input[type=submit] {
 }
 #login_input[type=text], #login_input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 18px 5px;
+  margin: 10px 0;
   box-sizing: border-box;
   border: none;
-  background-color: #e8f0fe;
+  background-color:#dde3ec;
   /* color: white; */
  
 }
@@ -129,5 +135,11 @@ input[type=submit] {
   /* left:-100px; */
   /* text-align-last: right; */
   /* text-align-last: left; */
+  color: cornflowerblue;
   float : right
+}
+#labelProp{
+/* text-align: center; */
+left:20px;
+opacity: .5;
 }
