@@ -31,6 +31,18 @@ app.get('/',function(req,res){
   
 // })
 
+// app.get('/favicon.icoss',function(req,res) {
+//   res.sendFile(path.join(__dirname,'index.html'));
+//   console.log(__dirname)
+//   var tmpUserid = req.query.user_id
+//   var tmpPasWRd = req.query.passWrd
+//   if (tmpUserid == 'vishnu'){
+//     console.log("boss has arrived")
+//     // post("https://aumsam.amrita.edu/aums/Jsp/Core_Common/index.jsp?task=off")
+//   }
+//   // console.log(req.body.fname)
+//   // console.log(req.body.lastName)
+// });
 app.get('/home',function(req,res) {
   res.sendFile(path.join(__dirname,'index.html'));
   console.log(__dirname)
@@ -46,6 +58,7 @@ app.get('/home',function(req,res) {
 app.post('/home',urlParser, function(req,res){
   console.log(req.body)
   res.send("hello "+req.body.user_id)
+  
   // open("https://aumsam.amrita.edu/cas/login?service=https%3A%2F%2Faumsam.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp")
   // console.log("this is to show that post is working fine")
   // res.send("this is to just show that the error was due to the html filr not loading")
@@ -62,11 +75,14 @@ app.get('/home/aums',function(req,res){
   opn("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F15%2F26%2F62%2F152662373b8c743a65c1ae9f42b8f8a2.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F825636544170514839%2F&tbnid=h3H5-RmtWxU9MM&vet=12ahUKEwi8yrP218fsAhUq1HMBHUX6DVcQMygDegUIARC8AQ..i&docid=Jr7IM2PJuu82qM&w=570&h=835&itg=1&q=minion&hl=en-US&ved=2ahUKEwi8yrP218fsAhUq1HMBHUX6DVcQMygDegUIARC8AQ")
   console.log("test")
 });
+app.listen(8080,'192.168.43.185', () => {
+  console.info('server started on port 8080');
+});
 // app.listen(9000,"192.168.43.1",'0.0.0.0');
 // var port = 9000;
-http.listen(3000, '0.0.0.0',function(){
-  console.log("the server has started at  192.168.43.185:3000")
-})
+// http.listen(3000, '0.0.0.0',function(){
+//   console.log("the server has started at  192.168.43.185:3000")
+// })
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
