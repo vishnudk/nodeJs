@@ -31,12 +31,7 @@ app.get('/get',function(req,res) {
   }
 
 });
-app.post('/get',urlParser, function(req,res){
-  console.log(req.body)
-  res.send("hello "+req.body.user_id)
 
-
-});
 app.get('/post',function(req,res) {
   res.sendFile(path.join(__dirname,'index.html'));
   console.log(__dirname)
