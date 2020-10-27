@@ -25,10 +25,8 @@ app.get('/get',function(req,res) {
   console.log(__dirname)
   var tmpUserid = req.query.user_id
   var tmpPasWRd = req.query.passWrd
-  if (tmpUserid == 'vishnu'){
-    console.log("boss has arrived")
-    
-  }
+  console.log(req.query.user_id)
+  console.log(req.query.passWrd)
 
 });
 
