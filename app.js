@@ -54,12 +54,14 @@ app.get('/hello/:name',function(req,res){
   res.send("the name is "+name)
 });
 app.get('/home/aums',function(req,res){
-  
+  res.render('index',{title:'hello test 123'})
   opn("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F15%2F26%2F62%2F152662373b8c743a65c1ae9f42b8f8a2.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F825636544170514839%2F&tbnid=h3H5-RmtWxU9MM&vet=12ahUKEwi8yrP218fsAhUq1HMBHUX6DVcQMygDegUIARC8AQ..i&docid=Jr7IM2PJuu82qM&w=570&h=835&itg=1&q=minion&hl=en-US&ved=2ahUKEwi8yrP218fsAhUq1HMBHUX6DVcQMygDegUIARC8AQ")
   console.log("test")
 });
-
-http.listen(3000,function(){
+// server.listen(3000, '192.168.42.195');
+// ng serve --host 192.168.42.195 --port 3000
+http.listen(3000,function(req,res){
+  // res.send("this is a test ")
   console.log("the server has started at  ip:3000")
 })
 // view engine setup

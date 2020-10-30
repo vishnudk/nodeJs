@@ -42,20 +42,23 @@ input::placeholder{
   left:600px; 
   z-index:2; 
   white-space: pre-line;  */
+
+
+
+
+
   background-color: #eceef1;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
-  /* margin-left: auto;
-  margin-right: auto; */
   width: 340px;
-  /* margin: 4px auto 10px auto; */
   padding:20px 26px;
   padding-top: 100px;
   position: relative;
-  left: 560px;
+  /* left: 270px; */
+  left: 30%;
   top : 150px;
 }
 /* #loginLogo{
@@ -70,8 +73,15 @@ input::placeholder{
 } */
 #logo{
 
+  /* display: block; */
+  /* background: url(../images/logo.png) no-repeat; */
   display: block;
   background: url(../images/logo.png) no-repeat;
+  text-indent: -999em;
+  float: right;
+  height: 100px;
+  width: 59%;
+  border: 0px;
   /* text-indent: -999em;
   float: right;
   margin: 0px 0px 10px;
@@ -82,12 +92,20 @@ input::placeholder{
   width: 59%;
   
   border: 0px; */
-  text-indent: -999em;
-  float: right;
-  height: 109px;
-  width: 855px;
+
+
+/* ------------------------------------- */
+  /* text-indent: -999em; */
+  /* float: right; */
+  /* height: 109px; */
+  /* width: 855px; */
+  /* width: 50%; */
+  /* ----------------------- */
   /* align-items: center; */
-  border: 0px;
+/* ------------------ */
+  /* border: 0px; */
+/* -------------------- */
+
   /* float: right;
   margin-left: 200px;
   margin-right: auto; */
