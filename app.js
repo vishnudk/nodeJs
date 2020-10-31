@@ -14,6 +14,8 @@ const open = require('open');
 var app = express();
 const http = require('http').Server(app)
 var urlParser = bodyParser.urlencoded({extended:false});
+var url = require('url');
+var adr = 'https://www.w3schools.com';
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/',function(req,res){
   res.send("hello welcome to the hoem page of my web site")
@@ -33,8 +35,10 @@ app.get('/get',function(req,res) {
 app.get('/post',function(req,res) {
   res.sendFile(path.join(__dirname,'index.html'));
   console.log(__dirname)
-  var tmpUserid = req.query.user_id
-  var tmpPasWRd = req.query.passWrd
+  var tmpUserid = req.query.user_id;
+  var tmpPasWRd = req.query.passWrd;
+  var q = url.parse(adr, true);
+  
   if (tmpUserid == 'vishnu'){
     console.log("boss has arrived")
     

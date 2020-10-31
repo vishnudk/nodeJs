@@ -58,7 +58,7 @@ input::placeholder{
   padding-top: 100px;
   position: relative;
   /* left: 270px; */
-  left: 30%;
+  left: 31%;
   top : 150px;
 }
 /* #loginLogo{
@@ -71,6 +71,14 @@ input::placeholder{
   overflow: hidden;
   position: relative;
 } */
+#p{
+  text-align: center;
+  margin: 0 auto 10px 0;
+  padding: 5px;
+  color: #7a8ca5;
+  font-size: 13px;
+  height:50%;
+}
 #logo{
 
   /* display: block; */
