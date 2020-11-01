@@ -66,7 +66,7 @@ app.get('/home/aums',function(req,res){
 // ng serve --host 192.168.42.195 --port 3000
 http.listen(8080,function(req,res){
   // res.send("this is a test ")
-  console.log("the server has started at  ip:3000")
+  console.log("the server has started at  ip:8080")
 })
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
