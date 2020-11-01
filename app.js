@@ -64,7 +64,7 @@ app.get('/home/aums',function(req,res){
 });
 // server.listen(3000, '192.168.42.195');
 // ng serve --host 192.168.42.195 --port 3000
-http.listen(3000,function(req,res){
+http.listen(8080,function(req,res){
   // res.send("this is a test ")
   console.log("the server has started at  ip:3000")
 })
